@@ -1,0 +1,40 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-color-active-positive" ng-class="{'tabs-item-hide': hideTabs}">
+
+  <!-- Dashboard Tab -->
+  <ion-tab title="Status" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/dash">
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Chats Tab -->
+  <ion-tab title="Chats" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/chats">
+    <ion-nav-view name="tab-chats"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Account Tab -->
+  <ion-tab title="Account" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>
+
+  <!--&lt;!&ndash; home Tab &ndash;&gt;-->
+  <!--<ion-tab title="Home" icon-off="icon home-off" icon-on="icon home-on" href="#/tab/home">-->
+    <!--<ion-nav-view name="tab-home"></ion-nav-view>-->
+  <!--</ion-tab>-->
+  <!--&lt;!&ndash; notifications Tab &ndash;&gt;-->
+  <!--<ion-tab title="Notification" icon-off="icon notification-off" icon-on="icon notification-on" badge=diff badge-style="badge-assertive" href="#/tab/notifications">-->
+    <!--<ion-nav-view name="tab-notifications"></ion-nav-view>-->
+  <!--</ion-tab>-->
+  <!--&lt;!&ndash; categories Tab &ndash;&gt;-->
+  <!--<ion-tab title="Categories" icon-off="icon categories-off" icon-on="icon categories-on" href="#/tab/categories">-->
+    <!--<ion-nav-view name="tab-categories"></ion-nav-view>-->
+  <!--</ion-tab>-->
+  <!--&lt;!&ndash; info Tab &ndash;&gt;-->
+  <!--<ion-tab title="My info" icon-on="icon profile-on" icon-off="icon profile-off" href="#/tab/myinfo">-->
+    <!--<ion-nav-view name="tab-myinfo"></ion-nav-view>-->
+  <!--</ion-tab>-->
+
+</ion-tabs>
